@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        input{
+            width: 300px;
+            height: 40px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        .main{
+            margin-left: 100px;
+        }
+        label{
+            font-weight: 18px;
+            font-weight: bold;
+        }
+        .input{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .but{
+            width: 300px;
+            height: 40px;
+            background-color: rgba(45, 45, 189, 0.827);
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+       </style>
+</head>
+<body>
+    <div class="main">
+    <form action="user2.php" method="POST" enctype="multipart/form-data">
+        <h1 class="pro">Product`s details</h1>
+        <p class="input">Input the products Details</p>
+        <label for="name" >Product`s Name:</label><br>
+        <input type="text" name="name" placeholder="Product`s name"><br>
+        <label for="used">years / month of used:</label><br>
+        <input type="text" name="used" placeholder="Years / Month of used"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" placeholder="Enter Your Name"><br>
+        <label for="number">Phone number:</label><br>
+        <input type="number" name="number" placeholder="Enter Your Phone Number"><br>
+        <label for="picture">Product`s picture:</label><br>
+        <input type="file" name="picture"><br>
+        <button class="but" type="submit" name="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
